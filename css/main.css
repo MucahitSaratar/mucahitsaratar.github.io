@@ -1,0 +1,15 @@
+.mainpage {
+    text-align: center;
+    background-color: #1F8477;
+}
+.mainpage a:hover {
+    text-decoration: none;
+    background-color: #17A895;
+    color: white;
+}
+.mainpage a {
+    padding: 60px;
+    display: block;
+    color: black;
+    font-size: 20px;
+}

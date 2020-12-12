@@ -1,0 +1,15 @@
+.anlatim {
+    margin: 10px;
+}
+
+.icerik {
+    font-size: 20px;
+}
+body {
+    background-color: #c2e3cd;
+}
+#resim {
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+}
