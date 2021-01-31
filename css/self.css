@@ -4,6 +4,10 @@
 
 .icerik {
     font-size: 20px;
+    text-align: justify;
+}
+.icerik::first-letter {
+    margin-left: 30px;
 }
 body {
     background-color: #c2e3cd;
