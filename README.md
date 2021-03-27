@@ -1,2 +1,2 @@
 # mucahitsaratar.github.io
-simple static web pages
+simple static web pages. basic
