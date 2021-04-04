@@ -9,11 +9,17 @@
 .icerik::first-letter {
     margin-left: 30px;
 }
+
+.icerik a {
+    color: #333;
+    text-decoration: underline;
+}
+
 body {
     background-color: #c2e3cd;
 }
 #resim {
-    width: 200px;
+    width: 10   0px;
     float: left;
     margin-right: 10px;
 }
