@@ -1,2 +1,4 @@
 # mucahitsaratar.github.io
-simple static web pages. html/css/js basic
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [see as live](https://mucahitsaratar.github.io/)
+
