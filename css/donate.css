@@ -1,4 +1,4 @@
-body {
+.default {
     background-color: #4bedcc;
 }
 .donate {
@@ -12,4 +12,39 @@ body {
 
 #spoiler {
     display: none;
+}
+
+.lanetclass {
+    animation: myanimation 1s;
+}
+
+@keyframes myanimation {
+  0% {background-color: #63E7CC;
+    color: #63E7CC;}
+  10% {background-color: #74E8D0;
+    color: #74E8D0;}
+  20% {background-color: #87E9D5;
+    color: #87E9D5;}
+  30% {background-color: #9CEADA;
+    color: #9CEADA;}
+  40% {background-color: #AEE8DC;
+    color: #AEE8DC;}
+  50% {background-color: #C3E9E1;
+    color: #C3E9E1;}
+  60% {background-color: #D6EEE9;
+    color: #D6EEE9;}
+  70% {background-color: #E3F0ED;
+    color: #E3F0ED;}
+  75% {background-color: #F1F7F6;
+    color: #F1F7F6;}
+  80% {background-color: #FFFFFF;
+    color: #FFFFFF;}
+  85% {background-color: #E3F0ED;
+    color: #333;}
+  90% {background-color: #AEE8DC;
+    color: #333;}
+  95% {background-color: #74E8D0;
+    color: #333;}
+  100% {background-color: #4bedcc;
+    color: #333;}
 }
