@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: mucahitsaratar.github.io
+Token: 0851ea29fc3e9c9e4c10f632d89e78857d32c4ad6eddbb06ef22b3998ea970b0
