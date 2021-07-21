@@ -1,0 +1,55 @@
+.space {
+    margin: 40px 0 40px 0;
+}
+.anamenu {
+    padding-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+.anamenu a {
+    color: white;
+}
+.anamenu a:hover {
+    text-decoration: none;
+}
+.anamenu span {
+    padding-right: 15px;
+    float: right;
+}
+.anamenu svg {
+    margin: 0 20px 0 15px;
+}
+
+.header {
+    padding: 30px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.description {
+    text-indent: 50px;
+    text-align: justify;
+    font-size: 20px;
+    padding: 0 50px 0 50px;
+    margin: 40px 0 40px 0;
+}
+
+.code {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 40px 0 40px 0;
+}
+.code span {
+    padding: 3px 20px 3px 20px;
+    background-color: darkcyan;
+    margin: 40px 0 40px 0;
+}
+
+.image {
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+.image span {
+    display: block;
+}

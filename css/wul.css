@@ -1,0 +1,20 @@
+.baslik {
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.listem {
+    text-align: center;
+}
+
+.listem a {
+    padding: 20px;
+    transition: color 0.2s linear;
+}
+
+.listem a:hover {
+    background-color: cornflowerblue;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}

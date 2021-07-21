@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/self.css">
+    <link rel="stylesheet" href="../css/wtemplate.css">    
+    <title>ムチャヒト | write-up list</title>
+</head>
+<body>
+    <div class="anamenu">
+        <a href="../write-up-list.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16">
+  <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+</svg>
+             GO Back
+            </a>
+            <span>Machine Write-up</span>
+    </div>
+
+    <div class="header" space>CAP MACHINE</div>
+
+    <div class="description">scan to open ports with nmap.</div>
+
+    <div class="code"><span>nmap -sS -sV -sC -oN nmap.out 10.10.10.245 -vv</span></div>
+
+    <div class="image"><img src="../media/cap-media/nmap_out.png" alt=""><span>output nmap</span></div>
+
+    <div class="description">Try fist to login ftp service as anonymous</div>
+
+    <div class="image"><img src="../media/cap-media/ftp_login_fail.png" alt=""><span>ftp login as anonymous failed</span></div>
+
+    <div class="description">let's check the web site. and click everytking.</div>
+    
+    <div class="image"><img src="../media/cap-media/web0.png" alt=""><span>clicked capture</span></div>
+
+    <div class="description">
+        if /data/5 is exist, then /data/0 is must be exist like /data/[4321]. and we can download captured packages as pcap file. download the /data/0 and open in wireshark. analysis closely give to you ftp user and password. 
+    </div>
+    
+    <div class="image"><img src="../media/cap-media/ftp_credits.png" alt=""><span>we have to credit now! </span></div>
+
+    <div class="image"><img src="../media/cap-media/ftp_success.png" alt=""><span>We have to user.txt</span></div>
+    
+    <div class="description">who don't use same password on different systems? we have a username and password. let's try to login to ssh service.</div>
+    
+    <div class="code"><span>sshpass -p 'Buck3tH4TF0RM3!' ssh nathan@10.10.10.245</span></div>
+
+    <div class="image"><img src="../media/cap-media/ssh_login.png" alt=""><span>Yess. we have to user permisson shell.</span></div>
+
+    <div class="description">run the linpeas.sh. it is crazy! the python is have setuid permissions.</div>
+    
+    <div class="image"><img src="../media/cap-media/python3_setuid.png" alt=""></div>
+    
+    <div class="description">We can be root just run one-line command as nathan!</div>
+    
+    <div class="code"><span>python3 -c 'import os;os.setuid(0);os.system("/bin/sh")'</span></div>
+
+    <div class="image"><img src="../media/cap-media/root.png" alt=""><span>we got root shell!</span></div>
+    
+    <div class="header">Thank's for reading.</div>
+
+</body>
+</html>
