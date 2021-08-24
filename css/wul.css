@@ -8,6 +8,14 @@
     text-align: center;
 }
 
+.listem li {
+    margin: 35px;
+}
+
+.listem ul {
+    list-style: none;
+}
+
 .listem a {
     padding: 20px;
     transition: color 0.2s linear;
